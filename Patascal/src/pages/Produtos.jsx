@@ -1,44 +1,98 @@
-import img from '/public/araras.png'
+import img from '/public/Ana.png'
+import img2 from '/public/Rafael.png'
+import img3 from '/public/Carolina.png'
+import img4 from '/public/Beatriz.png'
+import img5 from '/public/Felipe.png'
+import img6 from '/public/Gabriel.png'
+import img7 from '/public/Lucas.png'
+import img8 from '/public/Mariana.png'
 import { SiAnimalplanet } from "react-icons/si";
 import { AiFillMedicineBox } from "react-icons/ai";
 
 const products = [
   {
-    name: '',
-    description: 'Cookie macio de red velvet com gotas de chocolate branco.',
-    tag: 'Mais pedido',
-    image: img
-  },
-  {
-    name: 'Oreo',
-    description: 'Cookie crocante com pedaços de Oreo e chocolate branco.',
-    tag: 'Nova receita',
-    image: img
-  },
-  {
-    name: 'Nutella',
-    description: 'Cookie macio recheado com Nutella e cobertura cremosa.',
-    tag: 'Especial',
-    image: img
-  },
-  {
-    name: 'Morango',
-    description: 'Cookie macio de morango com gotas de chocolate branco.',
-    tag: 'Mais pedido',
-    image: img
-  },
-  {
-    name: 'Maracujá',
-    description: 'Cookie amanteigado com recheio cremoso de maracujá.',
-    tag: 'Especial',
-    image: img
-  },
-  {
-    name: 'M&M',
-    description: 'Cookie macio com chocolate e deliciosos M&M coloridos.',
-    tag: 'Especial',
-    image: img
-  }
+  name: 'Suplemento de Cálcio para Répteis',
+  description: 'Suplemento mineral para auxiliar na saúde óssea e no desenvolvimento de répteis.',
+  tag: 'Répteis',
+  image: img
+},
+
+{
+  name: 'Vitamina para Aves Exóticas',
+  description: 'Suplemento vitamínico para auxiliar na alimentação e saúde de aves exóticas.',
+  tag: 'Aves',
+  image: img
+},
+
+{
+  name: 'Probiótico para Pequenos Mamíferos',
+  description: 'Suplemento para auxiliar no equilíbrio intestinal de pequenos mamíferos.',
+  tag: 'Mamíferos',
+  image: img
+},
+
+{
+  name: 'Suplemento de Vitamina D3',
+  description: 'Suplemento para auxiliar na absorção de cálcio e saúde óssea dos animais.',
+  tag: 'Suplementos',
+  image: img
+},
+
+{
+  name: 'Higienizador para Gaiolas',
+  description: 'Produto para auxiliar na limpeza e higienização de gaiolas e ambientes.',
+  tag: 'Higiene',
+  image: img
+},
+
+{
+  name: 'Multivitamínico para Roedores',
+  description: 'Suplemento nutricional para auxiliar na alimentação e saúde dos roedores.',
+  tag: 'Roedores',
+  image: img
+},
+
+{
+  name: 'Suplemento Mineral para Quelônios',
+  description: 'Suplemento mineral para auxiliar na saúde óssea e formação adequada do casco.',
+  tag: 'Quelônios',
+  image: img
+},
+
+{
+  name: 'Pomada Cicatrizante Veterinária',
+  description: 'Produto veterinário para auxiliar nos cuidados da pele dos animais exóticos.',
+  tag: 'Cuidados',
+  image: img
+},
+
+{
+  name: 'Suplemento para Répteis Herbívoros',
+  description: 'Suplemento nutricional para complementar a alimentação de répteis herbívoros.',
+  tag: 'Répteis',
+  image: img
+},
+
+{
+  name: 'Suplemento para Aves Ornamentais',
+  description: 'Suplemento nutricional para auxiliar na saúde e vitalidade de aves ornamentais.',
+  tag: 'Aves',
+  image: img
+},
+
+{
+  name: 'Areia Higiênica para Pequenos Animais',
+  description: 'Material desenvolvido para auxiliar na higiene e limpeza de pequenos animais.',
+  tag: 'Higiene',
+  image: img
+},
+
+{
+  name: 'Alimento Extrusado para Aves',
+  description: 'Alimento completo para complementar a dieta e nutrição de aves ornamentais.',
+  tag: 'Alimentação',
+  image: img
+}
 ]
 
 const vets = [
@@ -50,7 +104,7 @@ const vets = [
   email: 'gabriel.almeida@vetexoticos.com',
   experience: '8 anos de experiência no atendimento de aves, répteis e pequenos mamíferos.',
   availability: 'Segunda a sexta, das 08:00 às 18:00',
-  image: img
+  image: img6
 },
 
 {
@@ -61,7 +115,7 @@ const vets = [
   email: 'mariana.oliveira@vetexoticos.com',
   experience: '6 anos de experiência em atendimento clínico e preventivo de aves ornamentais.',
   availability: 'Segunda, quarta e sexta, das 09:00 às 17:00',
-  image: img
+  image: img8
 },
 
 {
@@ -72,7 +126,7 @@ const vets = [
   email: 'lucas.ferreira@vetexoticos.com',
   experience: '10 anos de experiência com répteis, incluindo tartarugas, lagartos e serpentes.',
   availability: 'Terça a sábado, das 10:00 às 19:00',
-  image: img
+  image: img7
 },
 
 {
@@ -83,7 +137,7 @@ const vets = [
   email: 'beatriz.santos@vetexoticos.com',
   experience: '7 anos de experiência no atendimento de coelhos, hamsters, porquinhos-da-índia e outros pequenos mamíferos.',
   availability: 'Segunda a sexta, das 08:00 às 16:00',
-  image: img
+  image: img4
 },
 
 {
@@ -94,7 +148,7 @@ const vets = [
   email: 'rafael.martins@vetexoticos.com',
   experience: '12 anos de experiência em clínica veterinária e cuidados de animais silvestres e exóticos.',
   availability: 'Segunda a quinta, das 09:00 às 18:00',
-  image: img
+  image: img2
 },
 
 {
@@ -105,7 +159,7 @@ const vets = [
   email: 'carolina.mendes@vetexoticos.com',
   experience: '5 anos de experiência em diagnóstico e tratamento de problemas dermatológicos em animais exóticos.',
   availability: 'Terça a sexta, das 08:00 às 17:00',
-  image: img
+  image: img3
 },
 
 {
@@ -116,7 +170,7 @@ const vets = [
   email: 'felipe.rodrigues@vetexoticos.com',
   experience: '9 anos de experiência com atendimento clínico e acompanhamento de animais silvestres.',
   availability: 'Segunda a sexta, das 10:00 às 19:00',
-  image: img
+  image: img5
 },
 
 {
@@ -133,8 +187,36 @@ const vets = [
 
 function Products() {
   return (
-    <section id="products" className="bg-emerald-100 py-20 ">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section id="products" className="bg-white py-20 ">
+
+    <div className="py-20 bg-emerald-500 m-20 rounded-2xl">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
+        <div className="max-w-2xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 ">Nossos sabores</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
+            Escolhas que encantam desde a primeira mordida.
+          </h2>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {vets.map((vet) => (
+            <article key={vet.name} className="overflow-hidden rounded-2xl border border-stone-200 bg-emerald-100 shadow-sm">
+              <img src={vet.image} alt={vet.name} className="h-100 w-full object-cover" />
+              <div className="p-6">
+                <SiAnimalplanet size={40} className=" flex mb-3 text-emerald-900" />
+                <p className="text-sm font-semibold text-emerald-700">{vet.specialty}</p>
+                <h3 className="mt-3 text-xl font-semibold text-slate-900">{vet.name}</h3>
+                <p className="mt-2 text-sm leading-7 text-slate-600">Cidade: {vet.city}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">Telefone: {vet.phone}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">Email: {vet.email}</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">Experiência: {vet.experience}</p>
+                <p className="mt-2  text-sm leading-7 text-slate-600">Disponível: {vet.availability}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+    </div>
+
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 mt-30">Nossos sabores</p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
@@ -143,34 +225,15 @@ function Products() {
         </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {vets.map((vet) => (
-            <article key={vet.name} className="overflow-hidden rounded-2xl border border-stone-200 bg-stone-50 shadow-sm">
-              <img src={vet.image} alt={vet.name} className="h-100 w-full object-cover" />
-              <div className="p-6">
-                <SiAnimalplanet size={40} className=" flex mb-3 text-amber-600" />
-                <p className="text-sm font-semibold text-amber-700">{vet.specialty}</p>
-                <h3 className="mt-3 text-xl font-semibold text-slate-900">{vet.name}</h3>
-                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{vet.city}</p>
-                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{vet.phone}</p>
-                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{vet.email}</p>
-                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{vet.experience}</p>
-                <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{vet.availability}</p>
-                <button className="rounded-full bg-amber-600 px-6 py-3 font-semibold text-white transition hover:bg-amber-700">Peça aqui</button>
-              </div>
-            </article>
-          ))}
-        </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
           {products.map((product) => (
             <article key={product.name} className="overflow-hidden rounded-2xl border border-stone-200 bg-stone-50 shadow-sm">
               <img src={product.image} alt={product.name} className="h-48 w-full object-cover" />
               <div className="p-6">
-                <AiFillMedicineBox size={40} className=" flex mb-3 text-amber-600" />
-                <p className="text-sm font-semibold text-amber-700">{product.tag}</p>
+                <AiFillMedicineBox size={40} className=" flex mb-3 text-emerald-900" />
+                <p className="text-sm font-semibold text-emerald-700">{product.tag}</p>
                 <h3 className="mt-3 text-xl font-semibold text-slate-900">{product.name}</h3>
                 <p className="mt-2 mb-5 text-sm leading-7 text-slate-600">{product.description}</p>
-                <button className="rounded-full bg-amber-600 px-6 py-3 font-semibold text-white transition hover:bg-amber-700">Peça aqui</button>
+                <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Peça aqui</button>
               </div>
             </article>
           ))}
