@@ -9,27 +9,26 @@ export default function FAQ() {
   };
 
   return (
-    <section className="w-full max-w-4xl mx-auto p-6">
-      <div className="space-y-4">
+      <div className="pt-60 p-16 grid grid-cols-2 gap-8 items-start">
         {faq.map((faq, index) => {
           const isOpen = openCard === index;
 
           return (
             <div
               key={index}
-              className="relative overflow-hidden bg-white border border-gray-200 rounded-xl shadow-md transition-all duration-300"
+              className="relative bg-emerald-200 border border-gray-200 rounded-xl shadow-md transition-all duration-300"
             >
               {/* Pergunta */}
               <button
                 onClick={() => toggleCard(index)}
                 className="w-full flex items-center justify-between text-left p-5 pr-24"
               >
-                <span className="text-lg font-semibold text-gray-800">
+                <span className="text-lg font-semibold text-emerald-950">
                   {faq.question}
                 </span>
 
                 <span
-                  className={`text-2xl transition-transform duration-300 ${
+                  className={`text-2xl transition-transform duration-300 text-emerald-900 ${
                     isOpen ? 'rotate-45' : 'rotate-0'
                   }`}
                 >
@@ -46,7 +45,7 @@ export default function FAQ() {
                 }`}
               >
                 <div className="overflow-hidden">
-                  <p className="px-5 pb-5 pr-24 text-sm leading-relaxed text-gray-600">
+                  <p className="px-5 pb-5 pr-24 text-sm leading-relaxed text-emerald-900">
                     {faq.answer}
                   </p>
                 </div>
@@ -62,6 +61,5 @@ export default function FAQ() {
           );
         })}
       </div>
-    </section>
   );
 }
