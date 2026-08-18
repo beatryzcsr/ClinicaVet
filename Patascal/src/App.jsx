@@ -5,6 +5,9 @@ import FAQ from './pages/FAQ';
 import Contato from './pages/Contato';
 import Home from './pages/Home';
 import Sobre from './pages/Sobre'
+import NotFound from "./pages/Erro";
+
+
 
 export default function App() {
   return (
@@ -16,6 +19,7 @@ export default function App() {
         <Route path="/contato" element={<Contato />} />
         <Route path="/" element={<Home />} />
         <Route path='/sobre' element={<Sobre />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
