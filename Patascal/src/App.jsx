@@ -4,6 +4,7 @@ import Products from './pages/Produtos';
 import FAQ from './pages/FAQ';
 import Contato from './pages/Contato';
 import Home from './pages/Home';
+import Sobre from './pages/Sobre'
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/" element={<Home />} />
+        <Route path='/sobre' element={<Sobre />} />
       </Routes>
     </BrowserRouter>
   );
