@@ -6,6 +6,16 @@ import img5 from '/public/Felipe.png'
 import img6 from '/public/Gabriel.png'
 import img7 from '/public/Lucas.png'
 import img8 from '/public/Mariana.png'
+import img10 from '/public/verde1.png'
+import img11 from '/public/verde2.png'
+import img12 from '/public/verde3.png'
+import img13 from '/public/verde4.png'
+import img14 from '/public/verde5.png'
+import img15 from '/public/verde6.png'
+import img16 from '/public/verde7.png'
+import img17 from '/public/verde8.png'
+import img18 from '/public/verde9.png'
+import img19 from '/public/verde10.png'
 import { SiAnimalplanet } from "react-icons/si";
 import { AiFillMedicineBox } from "react-icons/ai";
 
@@ -14,85 +24,64 @@ const products = [
   name: 'Suplemento de Cálcio para Répteis',
   description: 'Suplemento mineral para auxiliar na saúde óssea e no desenvolvimento de répteis.',
   tag: 'Répteis',
-  image: img
+  image: img10
 },
 
 {
   name: 'Vitamina para Aves Exóticas',
   description: 'Suplemento vitamínico para auxiliar na alimentação e saúde de aves exóticas.',
   tag: 'Aves',
-  image: img
+  image: img11
 },
 
 {
   name: 'Probiótico para Pequenos Mamíferos',
   description: 'Suplemento para auxiliar no equilíbrio intestinal de pequenos mamíferos.',
   tag: 'Mamíferos',
-  image: img
+  image: img12
 },
 
 {
   name: 'Suplemento de Vitamina D3',
   description: 'Suplemento para auxiliar na absorção de cálcio e saúde óssea dos animais.',
   tag: 'Suplementos',
-  image: img
+  image: img13
 },
 
 {
   name: 'Higienizador para Gaiolas',
   description: 'Produto para auxiliar na limpeza e higienização de gaiolas e ambientes.',
   tag: 'Higiene',
-  image: img
+  image: img14
 },
 
 {
   name: 'Multivitamínico para Roedores',
   description: 'Suplemento nutricional para auxiliar na alimentação e saúde dos roedores.',
   tag: 'Roedores',
-  image: img
+  image: img15
 },
 
 {
   name: 'Suplemento Mineral para Quelônios',
   description: 'Suplemento mineral para auxiliar na saúde óssea e formação adequada do casco.',
   tag: 'Quelônios',
-  image: img
+  image: img16
 },
 
 {
   name: 'Pomada Cicatrizante Veterinária',
   description: 'Produto veterinário para auxiliar nos cuidados da pele dos animais exóticos.',
   tag: 'Cuidados',
-  image: img
+  image: img17
 },
 
 {
   name: 'Suplemento para Répteis Herbívoros',
   description: 'Suplemento nutricional para complementar a alimentação de répteis herbívoros.',
   tag: 'Répteis',
-  image: img
+  image: img18
 },
-
-{
-  name: 'Suplemento para Aves Ornamentais',
-  description: 'Suplemento nutricional para auxiliar na saúde e vitalidade de aves ornamentais.',
-  tag: 'Aves',
-  image: img
-},
-
-{
-  name: 'Areia Higiênica para Pequenos Animais',
-  description: 'Material desenvolvido para auxiliar na higiene e limpeza de pequenos animais.',
-  tag: 'Higiene',
-  image: img
-},
-
-{
-  name: 'Alimento Extrusado para Aves',
-  description: 'Alimento completo para complementar a dieta e nutrição de aves ornamentais.',
-  tag: 'Alimentação',
-  image: img
-}
 ]
 
 const vets = [
@@ -189,18 +178,18 @@ function Products() {
   return (
     <section id="products" className="bg-white py-20 ">
 
-    <div className="py-20 bg-emerald-500 m-20 rounded-2xl">
+    <div className="py-20 bg-emerald-100 m-20 rounded-2xl">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 ">Nossos sabores</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 ">Veterinários</p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
-            Escolhas que encantam desde a primeira mordida.
+            Nossos profissionais especialisados para os cuidados de seu filhote
           </h2>
         </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {vets.map((vet) => (
-            <article key={vet.name} className="overflow-hidden rounded-2xl border border-stone-200 bg-emerald-100 shadow-sm">
+            <article key={vet.name} className="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
               <img src={vet.image} alt={vet.name} className="h-100 w-full object-cover" />
               <div className="p-6">
                 <SiAnimalplanet size={40} className=" flex mb-3 text-emerald-900" />
@@ -216,11 +205,14 @@ function Products() {
           ))}
         </div>
     </div>
+    </div>
 
+    <div className="py-20 bg-emerald-100 m-20 rounded-2xl">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700 mt-30">Nossos sabores</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-700">Remédios</p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-emerald-500 sm:text-4xl">
-            Escolhas que encantam desde a primeira mordida.
+            Nossos rémedios para os cuidados e melhoras dos seus animais  
           </h2>
         </div>
 
@@ -236,9 +228,11 @@ function Products() {
                 <button className="rounded-full bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700">Peça aqui</button>
               </div>
             </article>
+        
           ))}
+          </div>
+          </div>
         </div>
-      </div>
     </section>
   )
 }
