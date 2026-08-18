@@ -12,7 +12,7 @@ export default function Home() {
             Clinica veterinária de animais exóticos
           </p>
           <h1
-            className="font-bold text-5xl text-[#ffffff] md:text-6xl"
+            className="font-bold text-5xl text-[#ffffff] md:text-6xl justify-center items-center flex"
             style={{ fontFamily: '"Bodoni Moda SC", serif' }}
           >
             PATASCAL
