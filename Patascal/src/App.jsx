@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Products from './pages/Produtos';
 import FAQ from './pages/FAQ';
 import Contato from './pages/Contato';
@@ -21,6 +22,7 @@ export default function App() {
         <Route path='/sobre' element={<Sobre />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+        <Footer />
     </BrowserRouter>
   );
 }
