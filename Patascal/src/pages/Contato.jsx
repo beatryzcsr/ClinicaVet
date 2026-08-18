@@ -39,7 +39,7 @@ export default function Contato() {
         <div className="space-y-4 text-sm leading-8 text-[#333]">
         </div>
 
-        <div className=" my-17 rounded-xl bg-emerald-100 p-15 shadow-sm">
+        <div className=" my-17 rounded-xl bg-emerald-100 p-8 shadow-sm">
           <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
             <label className="text-left text-xs w-20">Nome</label>
             <input
