@@ -10,7 +10,7 @@ const links = [
 
 export default function Navbar() {
   return (
-    <header className="absolute z-30 w-full bg-[#b2dfdc] text-white">
+    <header className="fixed z-30 w-full bg-[#b2dfdc] text-white">
       <div className="container relative mx-auto flex h-20 items-center justify-center px-4 sm:h-24 sm:px-6 lg:h-28 lg:px-8">
         <div className="absolute left-4 top-1/2 flex h-24 w-24 -translate-y-1/2 items-center  overflow-hidden sm:left-6 sm:h-28 sm:w-28 lg:left-8 lg:h-32 lg:w-32">
           <img src="/logo.png" alt="Logo" className="h-full w-full object-contain" />
