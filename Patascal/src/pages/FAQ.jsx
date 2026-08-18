@@ -9,19 +9,19 @@ export default function FAQ() {
   };
 
   return (
-      <div className="pt-60 p-16 grid grid-cols-2 gap-8 items-start">
+      <div className="pt-50 p-16 grid grid-cols-2 gap-8 items-start mb-15 max-[560px]:grid-cols-1 max-[560px]:p-4 max-[560px]:pt-32 max-[560px]:gap-4">
         {faq.map((faq, index) => {
           const isOpen = openCard === index;
 
           return (
             <div
               key={index}
-              className="relative bg-emerald-200 border border-gray-200 rounded-xl shadow-md transition-all duration-300"
+              className="relative bg-emerald-100 border border-gray-200 rounded-xl shadow-md transition-all duration-300"
             >
               {/* Pergunta */}
               <button
                 onClick={() => toggleCard(index)}
-                className="w-full flex items-center justify-between text-left p-5 pr-24"
+                className="w-full flex items-center justify-between text-left p-5 pr-24 max-[560px]:p-4 max-[560px]:pr-21"
               >
                 <span className="text-lg font-semibold text-emerald-950">
                   {faq.question}
